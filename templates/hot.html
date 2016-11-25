@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block authorized %}
+	{% include "authorized.html" %}
+{% endblock %}
+
+{% block content %}
+      
+{% for post in posts %}
+  {% include "post.html" %}
+{% endfor %}
+                     
+{% endblock %}

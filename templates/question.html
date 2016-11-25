@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block not-authorized %}
+	{% include "not-authorized.html" %}
+{% endblock %}
+
+{% block main_head %}
+		    <div class="row">
+                        <div class="col-md-3">
+                            <h3>New Questions</h3>
+                        </div>
+                    </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h4>Title</h4>
+                                     </div>
+                                     <div class="col-md-10">
+                                         <input type="text" class="form-control" id="InputTitle1">
+                                     </div>                        
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                        <h4>Text</h4>
+                                     </div>
+                                     <div class="col-md-10">
+                                         <textarea class="form-control" rows="14"></textarea>
+                                     </div>                        
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                        <h4>Tags</h4>
+                                     </div>
+                                     <div class="col-md-10">
+                                          <input type="text" class="form-control" id="InputTitle2">
+                                     </div>                        
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-success">Ask!</button>
+                                    </div>                        
+                                </div>
+{% endblock %}

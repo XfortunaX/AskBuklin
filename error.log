@@ -1,0 +1,618 @@
+2016/11/07 15:14:20 [debug] 2616#2616: epoll add event: fd:7 op:1 ev:00002001
+2016/11/07 15:14:27 [debug] 2616#2616: post event 0000563FB94C6D00
+2016/11/07 15:14:27 [debug] 2616#2616: delete posted event 0000563FB94C6D00
+2016/11/07 15:14:27 [debug] 2616#2616: accept on 0.0.0.0:80, ready: 0
+2016/11/07 15:14:27 [debug] 2616#2616: posix_memalign: 0000563FB948E2C0:512 @16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 accept: 127.0.0.1:55432 fd:24
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer add: 24: 60000:1478520927701
+2016/11/07 15:14:27 [debug] 2616#2616: *1 reusable connection: 1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 epoll add event: fd:24 op:1 ev:80002001
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post event 0000563FB94C6E80
+2016/11/07 15:14:27 [debug] 2616#2616: *1 delete posted event 0000563FB94C6E80
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http wait request handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 recv: fd:24 471 of 1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 posix_memalign: 0000563FB93C14A0:4096 @16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http process request line
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http request line: "GET / HTTP/1.1"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http uri: "/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http args: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http exten: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 posix_memalign: 0000563FB93B40B0:4096 @16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http process request header line
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Host: askbuklin.com"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Connection: keep-alive"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Upgrade-Insecure-Requests: 1"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header done
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer del: 24: 1478520927701
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 rewrite phase: 1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 test location: "/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 test location: ~ "\.\w\w\w?\w?$"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 using configuration "/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http cl:-1 max:1048576
+2016/11/07 15:14:27 [debug] 2616#2616: *1 rewrite phase: 3
+2016/11/07 15:14:27 [debug] 2616#2616: *1 rewrite phase: 4
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post rewrite phase: 5
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 6
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 7
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 8
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 9
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 10
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 11
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 12
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post access phase: 13
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http init upstream, client timer: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 epoll add event: fd:24 op:3 ev:80002005
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "Host: "
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script var: "askbuklin.com"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "X-Real-IP: "
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script var: "127.0.0.1"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "Host: "
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script var: "askbuklin.com"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "X-Real-IP: "
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script var: "127.0.0.1"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: "Connection: close
+"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header: "Upgrade-Insecure-Requests: 1"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http proxy header:
+"GET / HTTP/1.0
+Host: askbuklin.com
+X-Real-IP: 127.0.0.1
+Host: askbuklin.com
+X-Real-IP: 127.0.0.1
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se
+
+"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http cleanup add: 0000563FB93C2478
+2016/11/07 15:14:27 [debug] 2616#2616: *1 get rr peer, try: 1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 stream socket 25
+2016/11/07 15:14:27 [debug] 2616#2616: *1 epoll add connection: fd:25 ev:80002005
+2016/11/07 15:14:27 [debug] 2616#2616: *1 connect to 127.0.0.1:8000, fd:25 #2
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http upstream connect: -2
+2016/11/07 15:14:27 [debug] 2616#2616: *1 posix_memalign: 0000563FB93AFD60:128 @16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer add: 25: 60000:1478520927738
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http finalize request: -4, "/?" a:1, c:2
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http request count:2 blk:0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post event 0000563FB94D8E90
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post event 0000563FB94C6EE0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post event 0000563FB94D8EF0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 delete posted event 0000563FB94D8E90
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http run request: "/?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http upstream check client, write event:1, "/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http upstream recv(): -1 (11: Resource temporarily unavailable)
+2016/11/07 15:14:27 [debug] 2616#2616: *1 delete posted event 0000563FB94C6EE0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http upstream request: "/?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http upstream process header
+2016/11/07 15:14:27 [error] 2616#2616: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: askbuklin.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "askbuklin.com"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http next upstream, 2
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free rr peer 1 4
+2016/11/07 15:14:27 [debug] 2616#2616: *1 finalize http upstream request: 502
+2016/11/07 15:14:27 [debug] 2616#2616: *1 finalize http proxy request
+2016/11/07 15:14:27 [debug] 2616#2616: *1 close http upstream connection: 25
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB93AFD60, unused: 48
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer del: 25: 1478520927738
+2016/11/07 15:14:27 [debug] 2616#2616: *1 delete posted event 0000563FB94D8EF0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http finalize request: 502, "/?" a:1, c:1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http special response: 502, "/?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 uploadprogress error-tracker error: 502
+2016/11/07 15:14:27 [debug] 2616#2616: *1 uploadprogress error-tracker not tracking in this location
+2016/11/07 15:14:27 [debug] 2616#2616: *1 xslt filter header
+2016/11/07 15:14:27 [debug] 2616#2616: *1 HTTP/1.1 502 Bad Gateway
+Server: nginx/1.10.0 (Ubuntu)
+Date: Mon, 07 Nov 2016 12:14:27 GMT
+Content-Type: text/html
+Content-Length: 584
+Connection: keep-alive
+
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:1 f:0 0000563FB93B4B90, pos 0000563FB93B4B90, size: 166 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter: l:0 f:0 s:166
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http output filter "/?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http copy filter: "/?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 image filter
+2016/11/07 15:14:27 [debug] 2616#2616: *1 xslt filter body
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http postpone filter "/?" 0000563FB93B4DB0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write old buf t:1 f:0 0000563FB93B4B90, pos 0000563FB93B4B90, size: 166 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA6AC0, size: 120 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA7DA0, size: 62 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA7BC0, size: 402 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter: l:1 f:0 s:750
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter limit 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 writev: 750 of 750
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter 0000000000000000
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http copy filter: 0 "/?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http finalize request: 0, "/?" a:1, c:1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 set http keepalive handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http close request
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http log handler
+2016/11/07 15:14:27 [debug] 2618#2618: epoll add event: fd:7 op:1 ev:00002001
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB93C14A0, unused: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB93B40B0, unused: 459
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:27 [debug] 2616#2616: *1 hc free: 0000000000000000 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 hc busy: 0000000000000000 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 tcp_nodelay
+2016/11/07 15:14:27 [debug] 2616#2616: *1 reusable connection: 1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer add: 24: 65000:1478520932739
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post event 0000563FB94C6E80
+2016/11/07 15:14:27 [debug] 2616#2616: *1 delete posted event 0000563FB94C6E80
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 recv: fd:24 -1 of 1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 recv() not ready (11: Resource temporarily unavailable)
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:27 [debug] 2616#2616: epoll del event: fd:7 op:2 ev:00000000
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 recv: fd:24 413 of 1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 posix_memalign: 0000563FB93C14A0:4096 @16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer del: 24: 1478520932739
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http process request line
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http request line: "GET /favicon.ico HTTP/1.1"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http uri: "/favicon.ico"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http args: ""
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http exten: "ico"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 posix_memalign: 0000563FB93B40B0:4096 @16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http process request header line
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Host: askbuklin.com"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Connection: keep-alive"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Accept: */*"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Referer: http://askbuklin.com/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http header done
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 rewrite phase: 1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 test location: "/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 test location: "uploads/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 test location: ~ "\.\w\w\w?\w?$"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 using configuration "\.\w\w\w?\w?$"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http cl:-1 max:1048576
+2016/11/07 15:14:27 [debug] 2616#2616: *1 rewrite phase: 3
+2016/11/07 15:14:27 [debug] 2616#2616: *1 rewrite phase: 4
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post rewrite phase: 5
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 6
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 7
+2016/11/07 15:14:27 [debug] 2616#2616: *1 generic phase: 8
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 9
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 10
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 11
+2016/11/07 15:14:27 [debug] 2616#2616: *1 access phase: 12
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post access phase: 13
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 14
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 15
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 16
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 17
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 18
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 19
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 20
+2016/11/07 15:14:27 [debug] 2616#2616: *1 content phase: 21
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http filename: "/home/sergey/AskBuklin/static/favicon.ico"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 add cleanup: 0000563FB93C21E8
+2016/11/07 15:14:27 [error] 2616#2616: *1 open() "/home/sergey/AskBuklin/static/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: askbuklin.com, request: "GET /favicon.ico HTTP/1.1", host: "askbuklin.com", referrer: "http://askbuklin.com/"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http finalize request: 404, "/favicon.ico?" a:1, c:1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http special response: 404, "/favicon.ico?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http set discard body
+2016/11/07 15:14:27 [debug] 2616#2616: *1 uploadprogress error-tracker error: 404
+2016/11/07 15:14:27 [debug] 2616#2616: *1 uploadprogress error-tracker not tracking in this location
+2016/11/07 15:14:27 [debug] 2616#2616: *1 xslt filter header
+2016/11/07 15:14:27 [debug] 2616#2616: *1 HTTP/1.1 404 Not Found
+Server: nginx/1.10.0 (Ubuntu)
+Date: Mon, 07 Nov 2016 12:14:27 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:1 f:0 0000563FB93C2390, pos 0000563FB93C2390, size: 195 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter: l:0 f:0 s:195
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http output filter "/favicon.ico?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http copy filter: "/favicon.ico?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 image filter
+2016/11/07 15:14:27 [debug] 2616#2616: *1 xslt filter body
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http postpone filter "/favicon.ico?" 0000563FB93C2468
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http gzip filter
+2016/11/07 15:14:27 [debug] 2616#2616: *1 malloc: 0000563FB93B50C0:16384
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip alloc: n:1 s:5936 a:8192 p:0000563FB93B50C0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip alloc: n:1024 s:2 a:2048 p:0000563FB93B70C0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip alloc: n:1024 s:2 a:2048 p:0000563FB93B78C0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip alloc: n:1024 s:2 a:2048 p:0000563FB93B80C0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip alloc: n:512 s:4 a:2048 p:0000563FB93B88C0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in: 0000563FB93B4608
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in_buf:0000563FB93B4490 ni:0000563FB8CA7660 ai:116
+2016/11/07 15:14:27 [debug] 2616#2616: *1 malloc: 0000563FB94EAD20:4096
+2016/11/07 15:14:27 [debug] 2616#2616: *1 deflate in: ni:0000563FB8CA7660 no:0000563FB94EAD20 ai:116 ao:4096 fl:0 redo:0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 deflate out: ni:0000563FB8CA76D4 no:0000563FB94EAD20 ai:0 ao:4096 rc:0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in_buf:0000563FB93B4490 pos:0000563FB8CA7660
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in: 0000563FB93B4618
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in_buf:0000563FB93B44E0 ni:0000563FB8CA7DA0 ai:62
+2016/11/07 15:14:27 [debug] 2616#2616: *1 deflate in: ni:0000563FB8CA7DA0 no:0000563FB94EAD20 ai:62 ao:4096 fl:0 redo:0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 deflate out: ni:0000563FB8CA7DDE no:0000563FB94EAD20 ai:0 ao:4096 rc:0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in_buf:0000563FB93B44E0 pos:0000563FB8CA7DA0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in: 0000563FB93B4628
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in_buf:0000563FB93B4530 ni:0000563FB8CA7BC0 ai:402
+2016/11/07 15:14:27 [debug] 2616#2616: *1 deflate in: ni:0000563FB8CA7BC0 no:0000563FB94EAD20 ai:402 ao:4096 fl:4 redo:0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 deflate out: ni:0000563FB8CA7D52 no:0000563FB94EADD4 ai:0 ao:3916 rc:1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 gzip in_buf:0000563FB93B4530 pos:0000563FB8CA7BC0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB93B50C0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http chunk: 10
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http chunk: 188
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write old buf t:1 f:0 0000563FB93C2390, pos 0000563FB93C2390, size: 195 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:1 f:0 0000563FB93B4788, pos 0000563FB93B4788, size: 4 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CAAA20, size: 10 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:1 f:0 0000563FB94EAD20, pos 0000563FB94EAD20, size: 188 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8A5DF11, size: 7 file: 0, size: 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter: l:1 f:1 s:404
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter limit 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 writev: 404 of 404
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http write filter 0000000000000000
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http copy filter: 0 "/favicon.ico?"
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http finalize request: 0, "/favicon.ico?" a:1, c:1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 set http keepalive handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http close request
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http log handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB94EAD20
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000000000000000
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB93C14A0, unused: 8
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB93B40B0, unused: 1916
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:27 [debug] 2616#2616: *1 hc free: 0000000000000000 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 hc busy: 0000000000000000 0
+2016/11/07 15:14:27 [debug] 2616#2616: *1 reusable connection: 1
+2016/11/07 15:14:27 [debug] 2616#2616: *1 event timer add: 24: 65000:1478520932878
+2016/11/07 15:14:27 [debug] 2616#2616: *1 post event 0000563FB94C6E80
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http empty handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 delete posted event 0000563FB94C6E80
+2016/11/07 15:14:27 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:27 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 recv: fd:24 -1 of 1024
+2016/11/07 15:14:27 [debug] 2616#2616: *1 recv() not ready (11: Resource temporarily unavailable)
+2016/11/07 15:14:27 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:40 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:40 [debug] 2616#2616: *1 recv: fd:24 475 of 1024
+2016/11/07 15:14:40 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 posix_memalign: 0000563FB93C14A0:4096 @16
+2016/11/07 15:14:40 [debug] 2616#2616: *1 event timer del: 24: 1478520932878
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http process request line
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http request line: "GET /test HTTP/1.1"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http uri: "/test"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http args: ""
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http exten: ""
+2016/11/07 15:14:40 [debug] 2616#2616: *1 posix_memalign: 0000563FB93B40B0:4096 @16
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http process request header line
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Host: askbuklin.com"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Connection: keep-alive"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Upgrade-Insecure-Requests: 1"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http header done
+2016/11/07 15:14:40 [debug] 2616#2616: *1 generic phase: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 rewrite phase: 1
+2016/11/07 15:14:40 [debug] 2616#2616: *1 test location: "/"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 test location: "uploads/"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 test location: ~ "\.\w\w\w?\w?$"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 using configuration "/"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http cl:-1 max:1048576
+2016/11/07 15:14:40 [debug] 2616#2616: *1 rewrite phase: 3
+2016/11/07 15:14:40 [debug] 2616#2616: *1 rewrite phase: 4
+2016/11/07 15:14:40 [debug] 2616#2616: *1 post rewrite phase: 5
+2016/11/07 15:14:40 [debug] 2616#2616: *1 generic phase: 6
+2016/11/07 15:14:40 [debug] 2616#2616: *1 generic phase: 7
+2016/11/07 15:14:40 [debug] 2616#2616: *1 generic phase: 8
+2016/11/07 15:14:40 [debug] 2616#2616: *1 access phase: 9
+2016/11/07 15:14:40 [debug] 2616#2616: *1 access phase: 10
+2016/11/07 15:14:40 [debug] 2616#2616: *1 access phase: 11
+2016/11/07 15:14:40 [debug] 2616#2616: *1 access phase: 12
+2016/11/07 15:14:40 [debug] 2616#2616: *1 post access phase: 13
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http init upstream, client timer: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "Host: "
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script var: "askbuklin.com"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "X-Real-IP: "
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script var: "127.0.0.1"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "Host: "
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script var: "askbuklin.com"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "X-Real-IP: "
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script var: "127.0.0.1"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: "Connection: close
+"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header: "Upgrade-Insecure-Requests: 1"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http proxy header:
+"GET /test HTTP/1.0
+Host: askbuklin.com
+X-Real-IP: 127.0.0.1
+Host: askbuklin.com
+X-Real-IP: 127.0.0.1
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se
+
+"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http cleanup add: 0000563FB93C2478
+2016/11/07 15:14:40 [debug] 2616#2616: *1 get rr peer, try: 1
+2016/11/07 15:14:40 [debug] 2616#2616: *1 stream socket 25
+2016/11/07 15:14:40 [debug] 2616#2616: *1 epoll add connection: fd:25 ev:80002005
+2016/11/07 15:14:40 [debug] 2616#2616: *1 connect to 127.0.0.1:8000, fd:25 #3
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http upstream connect: -2
+2016/11/07 15:14:40 [debug] 2616#2616: *1 posix_memalign: 0000563FB93AFD60:128 @16
+2016/11/07 15:14:40 [debug] 2616#2616: *1 event timer add: 25: 60000:1478520940038
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http finalize request: -4, "/test?" a:1, c:2
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http request count:2 blk:0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http run request: "/test?"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http upstream check client, write event:1, "/test"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http upstream recv(): -1 (11: Resource temporarily unavailable)
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http upstream request: "/test?"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http upstream process header
+2016/11/07 15:14:40 [error] 2616#2616: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: askbuklin.com, request: "GET /test HTTP/1.1", upstream: "http://127.0.0.1:8000/test", host: "askbuklin.com"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http next upstream, 2
+2016/11/07 15:14:40 [debug] 2616#2616: *1 free rr peer 1 4
+2016/11/07 15:14:40 [debug] 2616#2616: *1 finalize http upstream request: 502
+2016/11/07 15:14:40 [debug] 2616#2616: *1 finalize http proxy request
+2016/11/07 15:14:40 [debug] 2616#2616: *1 close http upstream connection: 25
+2016/11/07 15:14:40 [debug] 2616#2616: *1 free: 0000563FB93AFD60, unused: 48
+2016/11/07 15:14:40 [debug] 2616#2616: *1 event timer del: 25: 1478520940038
+2016/11/07 15:14:40 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http finalize request: 502, "/test?" a:1, c:1
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http special response: 502, "/test?"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 uploadprogress error-tracker error: 502
+2016/11/07 15:14:40 [debug] 2616#2616: *1 uploadprogress error-tracker not tracking in this location
+2016/11/07 15:14:40 [debug] 2616#2616: *1 xslt filter header
+2016/11/07 15:14:40 [debug] 2616#2616: *1 HTTP/1.1 502 Bad Gateway
+Server: nginx/1.10.0 (Ubuntu)
+Date: Mon, 07 Nov 2016 12:14:40 GMT
+Content-Type: text/html
+Content-Length: 584
+Connection: keep-alive
+
+2016/11/07 15:14:40 [debug] 2616#2616: *1 write new buf t:1 f:0 0000563FB93B4B90, pos 0000563FB93B4B90, size: 166 file: 0, size: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http write filter: l:0 f:0 s:166
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http output filter "/test?"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http copy filter: "/test?"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 image filter
+2016/11/07 15:14:40 [debug] 2616#2616: *1 xslt filter body
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http postpone filter "/test?" 0000563FB93B4DB0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 write old buf t:1 f:0 0000563FB93B4B90, pos 0000563FB93B4B90, size: 166 file: 0, size: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA6AC0, size: 120 file: 0, size: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA7DA0, size: 62 file: 0, size: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA7BC0, size: 402 file: 0, size: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http write filter: l:1 f:0 s:750
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http write filter limit 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 writev: 750 of 750
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http write filter 0000000000000000
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http copy filter: 0 "/test?"
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http finalize request: 0, "/test?" a:1, c:1
+2016/11/07 15:14:40 [debug] 2616#2616: *1 set http keepalive handler
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http close request
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http log handler
+2016/11/07 15:14:40 [debug] 2616#2616: *1 free: 0000563FB93C14A0, unused: 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 free: 0000563FB93B40B0, unused: 455
+2016/11/07 15:14:40 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:40 [debug] 2616#2616: *1 hc free: 0000000000000000 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 hc busy: 0000000000000000 0
+2016/11/07 15:14:40 [debug] 2616#2616: *1 reusable connection: 1
+2016/11/07 15:14:40 [debug] 2616#2616: *1 event timer add: 24: 65000:1478520945038
+2016/11/07 15:14:40 [debug] 2616#2616: *1 post event 0000563FB94C6E80
+2016/11/07 15:14:40 [debug] 2616#2616: *1 delete posted event 0000563FB94C6E80
+2016/11/07 15:14:40 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:40 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:40 [debug] 2616#2616: *1 recv: fd:24 -1 of 1024
+2016/11/07 15:14:40 [debug] 2616#2616: *1 recv() not ready (11: Resource temporarily unavailable)
+2016/11/07 15:14:40 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:52 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:52 [debug] 2616#2616: *1 recv: fd:24 481 of 1024
+2016/11/07 15:14:52 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 posix_memalign: 0000563FB93C14A0:4096 @16
+2016/11/07 15:14:52 [debug] 2616#2616: *1 event timer del: 24: 1478520945038
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http process request line
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http request line: "GET /test/?id=5 HTTP/1.1"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http uri: "/test/"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http args: "id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http exten: ""
+2016/11/07 15:14:52 [debug] 2616#2616: *1 posix_memalign: 0000563FB93B40B0:4096 @16
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http process request header line
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Host: askbuklin.com"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Connection: keep-alive"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Upgrade-Insecure-Requests: 1"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http header done
+2016/11/07 15:14:52 [debug] 2616#2616: *1 generic phase: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 rewrite phase: 1
+2016/11/07 15:14:52 [debug] 2616#2616: *1 test location: "/"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 test location: "uploads/"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 test location: ~ "\.\w\w\w?\w?$"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 using configuration "/"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http cl:-1 max:1048576
+2016/11/07 15:14:52 [debug] 2616#2616: *1 rewrite phase: 3
+2016/11/07 15:14:52 [debug] 2616#2616: *1 rewrite phase: 4
+2016/11/07 15:14:52 [debug] 2616#2616: *1 post rewrite phase: 5
+2016/11/07 15:14:52 [debug] 2616#2616: *1 generic phase: 6
+2016/11/07 15:14:52 [debug] 2616#2616: *1 generic phase: 7
+2016/11/07 15:14:52 [debug] 2616#2616: *1 generic phase: 8
+2016/11/07 15:14:52 [debug] 2616#2616: *1 access phase: 9
+2016/11/07 15:14:52 [debug] 2616#2616: *1 access phase: 10
+2016/11/07 15:14:52 [debug] 2616#2616: *1 access phase: 11
+2016/11/07 15:14:52 [debug] 2616#2616: *1 access phase: 12
+2016/11/07 15:14:52 [debug] 2616#2616: *1 post access phase: 13
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http init upstream, client timer: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "Host: "
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script var: "askbuklin.com"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "X-Real-IP: "
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script var: "127.0.0.1"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "Host: "
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script var: "askbuklin.com"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "X-Real-IP: "
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script var: "127.0.0.1"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "
+"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: "Connection: close
+"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http script copy: ""
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header: "Upgrade-Insecure-Requests: 1"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header: "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header: "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header: "Accept-Encoding: gzip, deflate, sdch"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header: "Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header: "Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http proxy header:
+"GET /test/?id=5 HTTP/1.0
+Host: askbuklin.com
+X-Real-IP: 127.0.0.1
+Host: askbuklin.com
+X-Real-IP: 127.0.0.1
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: csrftoken=Pj7vkhiiGJcS17PIkqZEciDyCXYt36t5jFRAYnoiw7XQVSxN8OFAOGKFkpsb20Se
+
+"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http cleanup add: 0000563FB93C2478
+2016/11/07 15:14:52 [debug] 2616#2616: *1 get rr peer, try: 1
+2016/11/07 15:14:52 [debug] 2616#2616: *1 stream socket 25
+2016/11/07 15:14:52 [debug] 2616#2616: *1 epoll add connection: fd:25 ev:80002005
+2016/11/07 15:14:52 [debug] 2616#2616: *1 connect to 127.0.0.1:8000, fd:25 #4
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http upstream connect: -2
+2016/11/07 15:14:52 [debug] 2616#2616: *1 posix_memalign: 0000563FB93AFD60:128 @16
+2016/11/07 15:14:52 [debug] 2616#2616: *1 event timer add: 25: 60000:1478520952350
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http finalize request: -4, "/test/?id=5" a:1, c:2
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http request count:2 blk:0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http run request: "/test/?id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http upstream check client, write event:1, "/test/"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http upstream recv(): -1 (11: Resource temporarily unavailable)
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http upstream request: "/test/?id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http upstream process header
+2016/11/07 15:14:52 [error] 2616#2616: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: askbuklin.com, request: "GET /test/?id=5 HTTP/1.1", upstream: "http://127.0.0.1:8000/test/?id=5", host: "askbuklin.com"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http next upstream, 2
+2016/11/07 15:14:52 [debug] 2616#2616: *1 free rr peer 1 4
+2016/11/07 15:14:52 [debug] 2616#2616: *1 finalize http upstream request: 502
+2016/11/07 15:14:52 [debug] 2616#2616: *1 finalize http proxy request
+2016/11/07 15:14:52 [debug] 2616#2616: *1 close http upstream connection: 25
+2016/11/07 15:14:52 [debug] 2616#2616: *1 free: 0000563FB93AFD60, unused: 48
+2016/11/07 15:14:52 [debug] 2616#2616: *1 event timer del: 25: 1478520952350
+2016/11/07 15:14:52 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http finalize request: 502, "/test/?id=5" a:1, c:1
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http special response: 502, "/test/?id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 uploadprogress error-tracker error: 502
+2016/11/07 15:14:52 [debug] 2616#2616: *1 uploadprogress error-tracker not tracking in this location
+2016/11/07 15:14:52 [debug] 2616#2616: *1 xslt filter header
+2016/11/07 15:14:52 [debug] 2616#2616: *1 HTTP/1.1 502 Bad Gateway
+Server: nginx/1.10.0 (Ubuntu)
+Date: Mon, 07 Nov 2016 12:14:52 GMT
+Content-Type: text/html
+Content-Length: 584
+Connection: keep-alive
+
+2016/11/07 15:14:52 [debug] 2616#2616: *1 write new buf t:1 f:0 0000563FB93B4B98, pos 0000563FB93B4B98, size: 166 file: 0, size: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http write filter: l:0 f:0 s:166
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http output filter "/test/?id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http copy filter: "/test/?id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 image filter
+2016/11/07 15:14:52 [debug] 2616#2616: *1 xslt filter body
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http postpone filter "/test/?id=5" 0000563FB93B4DB8
+2016/11/07 15:14:52 [debug] 2616#2616: *1 write old buf t:1 f:0 0000563FB93B4B98, pos 0000563FB93B4B98, size: 166 file: 0, size: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA6AC0, size: 120 file: 0, size: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA7DA0, size: 62 file: 0, size: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 write new buf t:0 f:0 0000000000000000, pos 0000563FB8CA7BC0, size: 402 file: 0, size: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http write filter: l:1 f:0 s:750
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http write filter limit 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 writev: 750 of 750
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http write filter 0000000000000000
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http copy filter: 0 "/test/?id=5"
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http finalize request: 0, "/test/?id=5" a:1, c:1
+2016/11/07 15:14:52 [debug] 2616#2616: *1 set http keepalive handler
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http close request
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http log handler
+2016/11/07 15:14:52 [debug] 2616#2616: *1 free: 0000563FB93C14A0, unused: 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 free: 0000563FB93B40B0, unused: 441
+2016/11/07 15:14:52 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:14:52 [debug] 2616#2616: *1 hc free: 0000000000000000 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 hc busy: 0000000000000000 0
+2016/11/07 15:14:52 [debug] 2616#2616: *1 reusable connection: 1
+2016/11/07 15:14:52 [debug] 2616#2616: *1 event timer add: 24: 65000:1478520957351
+2016/11/07 15:14:52 [debug] 2616#2616: *1 post event 0000563FB94C6E80
+2016/11/07 15:14:52 [debug] 2616#2616: *1 delete posted event 0000563FB94C6E80
+2016/11/07 15:14:52 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:14:52 [debug] 2616#2616: *1 malloc: 0000563FB9495080:1024
+2016/11/07 15:14:52 [debug] 2616#2616: *1 recv: fd:24 -1 of 1024
+2016/11/07 15:14:52 [debug] 2616#2616: *1 recv() not ready (11: Resource temporarily unavailable)
+2016/11/07 15:14:52 [debug] 2616#2616: *1 free: 0000563FB9495080
+2016/11/07 15:15:57 [debug] 2616#2616: *1 event timer del: 24: 1478520957351
+2016/11/07 15:15:57 [debug] 2616#2616: *1 http keepalive handler
+2016/11/07 15:15:57 [debug] 2616#2616: *1 close http connection: 24
+2016/11/07 15:15:57 [debug] 2616#2616: *1 reusable connection: 0
+2016/11/07 15:15:57 [debug] 2616#2616: *1 free: 0000000000000000
+2016/11/07 15:15:57 [debug] 2616#2616: *1 free: 0000563FB948E2C0, unused: 128
+2016/11/07 15:15:58 [debug] 2618#2618: epoll del event: fd:7 op:2 ev:00000000

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block not-authorized %}
+	{% include "not-authorized.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% include "post.html" %}
+
+{% for post in answer %}
+  {% include "answer.html" %}
+{% endfor %}
+				<div class="askbuklin_your_answer">
+                                    <div class="row">
+                                         <div class="col-md-12">
+                                             <textarea class="form-control" rows="6" placeholder="Enter your answer here..."></textarea>
+                                         </div>   
+                                    </div>
+                                    <div class="row">
+                                         <div class="col-md-12">
+                                            <h3>
+                                                <button type="button" class="btn btn-success">Answer</button>
+                                            </h3>
+                                         </div>   
+                                    </div>
+                                </div>
+
+{% include 'paginator.html' with posts=answer %}
+
+{% endblock %}

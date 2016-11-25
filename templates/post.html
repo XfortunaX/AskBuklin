@@ -1,0 +1,92 @@
+{% load staticfiles %}
+				<div class="askbuklin_question">
+                                    <div class="row">
+                                        <div class="col-md-2">
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4>{{post.id}}</h4> 
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="icon">
+                                                        <h4>
+															<img src={% static "image/luffi.jpg" %} alt={{post.name}}>
+														</h4> 
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                               <div class="askbuklin_question_like">
+                                                  <div class="col-md-12">
+                                                      <div class="row">
+                                                         <div class="col-md-6">
+                                                              <span>
+                                                                  <button type="button" class="btn btn-default">
+                                                                      <img class="like-button" src={% static "image/like.png" %}>
+                                                                  </button>
+                                                              </span>
+                                                         </div>
+                                                         <div class="col-md-6">
+                                                              <h5>{{post.like_count}}</h5>
+                                                         </div>
+                                                      </div>
+                                                      <div class="row">
+                                                          <div class="col-md-6">
+                                                              <span>
+                                                                  <button type="button" class="btn btn-default">
+                                                                      <img class="like-button" src={% static "image/dislike.png" %}>
+                                                                  </button>
+                                                              </span>
+                                                          </div>
+                                                          <div class="col-md-6">
+                                                              <h5>{{post.dislike_count}}</h5>
+                                                         </div>
+                                                       </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4>
+                                                        <a href="Url">{{post.title}}</a>
+                                                    </h4>
+                                                </div>    
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>{{post.content}}</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p><a href="Url">answer({{post.answer_count}})</a></p>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <p>Tags:</p>
+                                                </div>
+
+                                                <div class="col-md-3">
+													{% for tag in post.tags.all %}
+                                                    	<p><a href="Url">{{ tag }}</a></p>
+													{% endfor %}
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <p><a href="Url">bender</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+				</div>
+
+           

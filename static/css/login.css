@@ -1,0 +1,53 @@
+.askbuklin_head .row .col-md-3 h1{
+    margin-top: 17px;
+    color: #F5F5F5;
+}
+
+.askbuklin_head h4{
+    padding-top: 15px;
+}
+
+.askbuklin_main_head{
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.askbuklin_question_form .row{
+    margin-bottom: 15px;
+}
+
+.askbuklin-main-block {
+    padding-top: 30px;
+}
+
+.exception_pass {
+    display: none;
+}
+
+.exception_pass h4{
+    color: red;
+}
+
+.askbuklin_other_information_2 .col-md-3{
+    color: red;
+}
+
+.askbuklin_other_information_3 .col-md-3{
+    color: red;
+}
+
+.askbuklin_other_information_3 .col-md-4{
+    color: green;
+}
+
+.askbuklin_other_information_4 .col-md-3 h6{
+    color: orange;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+
+

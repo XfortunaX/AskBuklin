@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block not-authorized %}
+	{% include "not-authorized.html" %}
+{% endblock %}
+
+{% block main_head %}
+					<div class="row">
+             			 <div class="col-md-3">
+                            <h3>Log In</h3>
+                        </div>
+                    </div>
+{% endblock %}
+ 
+{% block content %}
+                                <div class="row">
+                                     <div class="col-md-6">
+                                        <div class="exception_pass" id="100">
+                                            <h4>Sorry, wrong password!</h4>
+                                        </div>
+                                     </div>     
+                                </div>
+
+                                <div class="row">
+                                     <div class="col-md-2">
+                                        <h4>Login</h4>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <input type="login" class="form-control" id="InputLogin" placeholder="login">
+                                     </div>                        
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                        <h4>Password</h4>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <input type="password" class="form-control" id="InputPassword" placeholder="Password" onclick="repass()">
+                                     </div>                        
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-success" onclick="check_pass()">Log In!</button>
+                                    </div>                        
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>
+                                            <a href="{% url 'signup' %}">create new account</a>
+                                        </h4>
+                                    </div>                        
+                                </div>
+
+{% endblock %}            

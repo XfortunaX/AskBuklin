@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block authorized %}
+	{% include "authorized.html" %}
+{% endblock %}
+
+{% block main_head %}
+	<div class="row">
+        <div class="col-md-3">
+             <h3>New Questions</h3>
+        </div>
+ 
+       <div class="col-md-2">
+             <h4><a href="{% url 'login' %}">Hot Questions</a></h4>
+       </div>
+   </div>
+{% endblock %}
+
+{% block content %}
+
+	{% for post in posts %}
+  		{% include "post.html" %}
+	{% endfor %}'
+
+	{% include 'paginator.html' with posts=posts %}
+
+{% endblock %}
