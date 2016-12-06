@@ -14,11 +14,19 @@ class Profile(models.Model):
 	def __str__(self):
 		return 'User {1}'.format(self.user.username)
 
+	class Meta:
+		verbose_name = 'Profile'
+		verbose_name_plural = 'Profiles'
+
 class Tag(models.Model):
     name = models.CharField('Tag', unique=True, max_length=16)
 
     def __str__(self):
         return self.name
+
+	class Meta:
+		verbose_name = 'Tag'
+		verbose_name_plural = 'Tags'
 
 class Question(models.Model):
 	title = models.CharField('Title', max_length=255)
@@ -28,12 +36,16 @@ class Question(models.Model):
     
 	created_date = models.DateTimeField('Creation date', auto_now=True)
 	like_count = models.IntegerField('Like count')
-	dislike_count = models.IntegerField('Dislike count')
+	answer_count = models.IntegerField('Answer count')
 
 	objects = ModelManager()
 
 	def __str__(self):
 		return self.title
+
+	class Meta:
+		verbose_name = 'Question'
+		verbose_name_plural = 'Questions'
 
 class Answer(models.Model):
 	title = models.CharField('Title', max_length=255)
@@ -43,21 +55,37 @@ class Answer(models.Model):
     
 	created_date = models.DateTimeField('Creation date', auto_now=True)
 	like_count = models.IntegerField('Like count')
-	dislike_count = models.IntegerField('Dislike count')
 
 	def __str__(self):
 		return self.title
 
-class Like_question(models.Model):
+	class Meta:
+		verbose_name = 'Answer'
+		verbose_name_plural = 'Answers'
+
+class Like_Question(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	question = models.ForeignKey(Question)  
+	question = models.ForeignKey(Question)
+	is_like = models.BooleanField(default=True)	
 
 	def __str__(self):
-		return 'User {1} liked {2}'.format(self.user.profile.nickname, self.question.title)
+		return 'User {1} like {2} '.format(self.user.userprofile.nickname, self.question)
 
-class Like_answer(models.Model):
+	class Meta:
+		unique_together = ("user", "question")
+		verbose_name = 'Like_qiestion'
+		verbose_name_plural = 'Likes_question'
+
+class Like_Answer(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	answer = models.ForeignKey(Answer)  
+	answer = models.ForeignKey(Answer)
+	is_like = models.BooleanField(default=True)	
 
 	def __str__(self):
-		return 'User {1} liked {2}'.format(self.user.profile.nickname, self.answer.title)
+		return 'User {1} like {2} '.format(self.user.userprofile.nickname, self.answer)
+
+	class Meta:
+		unique_together = ("user", "answer")
+		verbose_name = 'Like_answer'
+		verbose_name_plural = 'Likes_answer'
+

@@ -35,25 +35,18 @@
 
                     <div class="col-md-1">
                         <h3>
-				<a href="{% url 'question' %}">
-		                            <button type="button" class="btn btn-success">
-					Ask!</button>
-				</a>				
+							<a href="{% url 'question' %}">
+		                            <button type="button" class="btn btn-success">Ask!</button>
+							</a>				
                         </h3>
                     </div>
 
-                    <div class="col-md-1">
-                        <div class="icon">
-                            <h4>
-                                <img src="/static/image/luffi.jpg" alt="Luffi">
-                        </div>
-                    </div>
- 		    {% block authorized %}
-     		    {% endblock %}
+ 		    		{% block authorized %}
+     		   		{% endblock %}
 
-		    {% block not-authorized %}
-     		    {% endblock %}
-                 </div>
+		    		{% block not-authorized %}
+     		    	{% endblock %}
+                </div>
            </div>
        </div>
     </nav>
@@ -71,9 +64,8 @@
 								{% endblock %}
 							</div>
 
-							<div class="askbuklin_questions">
+							<div class="askbuklin_body">
                                 {% block content %}
-
      				 			{% endblock %}
                             </div>
 						</div>

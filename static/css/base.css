@@ -1,5 +1,5 @@
 .askbuklin_head .row .col-md-3 h1{
-    margin-top: 17px;
+    margin-top: 12px;
     color: #F5F5F5;
 }
 
@@ -8,8 +8,13 @@
     color: #F5F5F5;
 }
 
+#not_auth_1, #not_auth_2 {
+	margin-top: 15px;
+}
+
 .askbuklin_main_head{
-    margin-top: 35px;
+    margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 .askbuklin_main_part{
@@ -20,44 +25,12 @@
     padding-top: 20px;
 }
 
-.askbuklin_questions > .col-md-8{
+.askbuklin_main_head .row .col-md-1{
+    margin-top: 15px;
+}
+
+.askbuklin_body > .col-md-8{
     margin-right: 0px;
-}
-
-.askbuklin_question_1 .row > .col-md-2{
-    padding-left: 45px;
-}
-
-.askbuklin_question_2 .row > .col-md-2{
-    padding-left: 45px;
-}
-
-.askbuklin_question_3 .row > .col-md-2{
-    padding-left: 45px;
-}
-
-.askbuklin_question_like .col-md-6{
-    padding-left: 0px;
-}
-
-.askbuklin_question_1 .row > .col-md-9{
-    padding-left: 30px;
-}
-
-.askbuklin_question_2 .row > .col-md-9{
-    padding-left: 30px;
-}
-
-.askbuklin_question_3 .row > .col-md-9{
-    padding-left: 30px;
-}
-
-.askbuklin_question_like .row{
-    margin-bottom: 10px;
-}
-
-.askbuklin_question_like h5{
-    padding-left: 15px;
 }
 
 img {
@@ -66,18 +39,11 @@ img {
     border-radius: 30px;
 }
 
-span img{
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-}
-
-
 .askbuklin-main-block {
     padding-top: 30px;
 }
 
-.askbuklin_question_1, .askbuklin_question_2, .askbuklin_question_3 {
+.askbuklin_question {
     border: 3px solid #140F0B; 
     margin-bottom: 25px;    
 }
@@ -127,10 +93,51 @@ a {
     margin-bottom: 15px;
 }
 
+.askbuklin_question .row > .col-md-2{
+    padding-left: 45px;
+}
+
+.askbuklin_question .col-md-3 .col-md-12 {
+	padding-left: 50px;
+}
+
+.askbuklin_question_like .col-md-5{
+    padding-left: 40px;
+	padding-right: 0px;
+}
+
+.askbuklin_question_like .col-md-4{
+    padding-left: 65px;
+}
+
+.askbuklin_question .row > .col-md-9{
+    padding-left: 0px;
+}
+
+.askbuklin_question_like .row{
+    margin-bottom: 10px;
+}
+
+.askbuklin_question_like h5{
+    padding-left: 15px;
+}
+
+span img{
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+}
+
 /* index_end */
 
 
+/* question_start */
 
+#q_row_1, #q_row_2, #q_row_3, #q_row_4 {
+	margin-top: 18px;
+}
+
+/* question_end */
 
 
 
