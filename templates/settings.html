@@ -1,64 +1,52 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
-{% block authorized %}
-	{% include "authorized.html" %}
-{% endblock %}
-
 {% block content %}
-				<div class="row">
-                                    <div class="col-md-5">
-                                        <h2>Settings: Rorono Zoro</h2>
-                                     </div>                        
-                                </div>
+							<div class="settings">
 
-                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <h4>Login</h4>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <input type="login" class="form-control" id="InputLogin" placeholder="login">
-                                     </div>                        
-                                </div>
-
-                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <h4>Email</h4>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <input type="email" class="form-control" id="InputEmail" placeholder="rorono.zoro@mail.ru">
-                                     </div>                        
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <h4>NickName</h4>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <input type="NickName" class="form-control" id="InputNickName" placeholder="Zoro">
-                                     </div>                        
-                                </div>
-                                
-                                <div class="row">
-                                     <div class="col-md-3">
-                                        <h4>Upload avatar</h4>
-                                     </div>
-                                     <div class="col-md-8">
-                                            <a href="#" class="thumbnail">
-                                              <img src="..." alt="...">
-                                            </a>
-                                           <form enctype="multipart/form-data" method="post">
-                                                <p><input type="file" name="avatar" multiple accept="image/*"></p>
-                                           </form>
-                                     </div>                        
-                                </div>
-
-                                 <div class="row">
-                                     <div class="col-md-3">
-                                     </div>
-                                    <div class="col-md-8">
-                                        <button type="button" class="btn btn-success">Save</button>
-                                    </div>                        
-                                </div>
-
+								<form action="/settings/" data-ajax="false" method="POST" enctype="multipart/form-data">
+									{% csrf_token %}
+									{% for f in userForm %}
+									{% if f.errors %}
+										<div class="alert alert-danger">{{ f.errors }}</div>
+									{% endif %}
+									<div class="form-group{% if f.errors %} has-error{% endif %}">
+									   <div class="row">
+				                           <div class="col-md-3">
+				                               <h4>{{ f.label}}</h4>
+				                           </div>
+				                           <div class="col-md-4">
+				                               {{ f }}
+				                           </div>                        
+				                      </div>
+									</div>
+									{% endfor %}
+									{% for p in profileForm %}
+									{% if p.errors %}
+										<div class="alert alert-danger">{{ p.errors }}</div>
+									{% endif %}
+									<div class="form-group{% if p.errors %} has-error{% endif %}">
+									   <div class="row">
+				                           <div class="col-md-3">
+				                               <h4>{{ p.label}}</h4>
+				                           </div>
+				                           <div class="col-md-4">
+				                               {{ p }}
+				                           </div>                        
+				                      </div>
+									</div>
+									{% endfor %}
+							
+									{% csrf_token %}
+									<div class="form-group">
+										<div class="row">
+				                            <div class="col-md-3">
+				                            </div>
+				                            <div class="col-md-4">
+				                                <button type="submit" class="btn btn-primary">Sign Up!</button>
+				                            </div>                        
+				                        </div>
+								   </div>
+								</form>
+							</div>
 {% endblock %}

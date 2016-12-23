@@ -1,32 +1,36 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
-{% block not-authorized %}
-	{% include "not-authorized.html" %}
+{% block main_head %}
+		    		<div class="row">
+                        <div class="col-md-3">
+                            <h3>New Questions</h3>
+                        </div>
+                    </div>
 {% endblock %}
 
 {% block content %}
+						<div class="ask">
+							<form action="" method="POST" class="post-form">
+								{% csrf_token %}
+									{% for f in form %}
+									   <div class="row">
+				                           <div class="col-md-2">
+				                               <h4>{{ f.label}}</h4>
+				                           </div>
+				                           <div class="col-md-4">
+				                               {{ f }}
+				                           </div>                        
+				                      </div>
+									{% endfor %}
 
-{% include "post.html" %}
-
-{% for post in answer %}
-  {% include "answer.html" %}
-{% endfor %}
-				<div class="askbuklin_your_answer">
-                                    <div class="row">
-                                         <div class="col-md-12">
-                                             <textarea class="form-control" rows="6" placeholder="Enter your answer here..."></textarea>
-                                         </div>   
-                                    </div>
-                                    <div class="row">
-                                         <div class="col-md-12">
-                                            <h3>
-                                                <button type="button" class="btn btn-success">Answer</button>
-                                            </h3>
-                                         </div>   
-                                    </div>
+                                 <div class="row">
+									 <div class="col-md-2">
+                                     </div>
+                                    <div class="col-md-10">
+                                         <button type="submit" class="btn btn-primary">Ask!</button>
+                                    </div>                        
                                 </div>
-
-{% include 'paginator.html' with posts=answer %}
-
+							</form>
+						</div>
 {% endblock %}

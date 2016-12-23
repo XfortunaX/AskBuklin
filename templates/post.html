@@ -5,9 +5,9 @@
 
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="icon">
+                                                    <div class="icon" id="image_author">
                                                         <h4>
-															<img src={% static "image/luffi.jpg" %} alt={{post.name}}>
+															<img src="http://askbuklin.com/{{post.author.profile.avatar}}" alt="{{post.name}}">
 														</h4> 
                                                     </div>
                                                 </div>
@@ -16,26 +16,26 @@
                                             <div class="row">
                                                <div class="askbuklin_question_like">
                                                     <div class="row">
-                                                         <div class="col-md-5" id="like">
+                                                         <div class="col-md-5" id="dislike">
                                                               <span>
                                                                   <button type="button" class="btn btn-default">
-                                                                      <img class="like-button" src={% static "image/like.jpg" %}>
+                                                                      <img class="like-button" src={% static "image/dislike.png" %}>
                                                                   </button>
                                                               </span>
                                                          </div>
 
-														 <div class="col-md-5" id="dislike">
+														 <div class="col-md-5" id="like">
                                                               <span>
-                                                                  <button type="button" class="btn btn-default">
-                                                                      <img class="like-button" src={% static "image/dislike.jpg" %}>
+                                                                  <button type="button" class="js-post-like btn btn-default">
+                                                                      <img class="like-button" src={% static "image/like.png" %} data-id="{{post.id}}">
                                                                   </button>
                                                               </span>
-                                                          </div>
+                                                         </div>
 													</div>
 													
 													<div class="row">
-														<div class="col-md-4">
-                                                             <h5>{{post.like_count}}</h5>
+														<div class="col-md-4" id="like_count">
+                                                             <p>{{post.like_count}}</p>
                                                          </div>
 													</div>
                                                 </div>
@@ -46,7 +46,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <h4>
-                                                        <a href="Url">{{post.title}}</a>
+                                                        <a href="{% url 'question' id_quest=post.id %}">{{post.title}}</a>
                                                     </h4>
                                                 </div>    
                                             </div>
@@ -59,22 +59,24 @@
 
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <p><a href="Url">answer({{post.answer_count}})</a></p>
+                                                    <p><a href="{% url 'question' id_quest=post.id %}">answer({{post.answer_count}})</a></p>
                                                 </div>
 
                                                 <div class="col-md-2">
                                                     <p>Tags:</p>
                                                 </div>
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
 													{% for tag in post.tags.all %}
-                                                    	<p><a href="Url">{{ tag }}</a></p>
+                                                    	<span><a href="{% url 'questions_tag' tag=tag %}">{{ tag }}</a>&nbsp;&nbsp;&nbsp;</span>
 													{% endfor %}
                                                 </div>
+                                            </div>
 
-                                                <div class="col-md-3">
-                                                    <p><a href="Url">bender</a></p>
-                                                </div>
+											<div class="row">
+                                                <div class="col-md-12">
+                                                    <p>{{post.created_date}}</p>
+                                                </div>    
                                             </div>
                                         </div>
                                     </div>

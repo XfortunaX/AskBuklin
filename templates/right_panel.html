@@ -1,99 +1,58 @@
-        <div class="askbuklin_other_information_1">
+{% load staticfiles %}    
+    <div class="askbuklin_tags">
             <div class="row">
                 <div class="col-md-12">
                     <h2>Popular tags</h2>
                 </div>
              </div>
-        </div>
 
-        <div class="askbuklin_other_information_2">
              <div class="row">
-                  <div class="col-md-2">
-                       <h5>perl</h5>
-                  </div>
-
-                  <div class="col-md-3">
-                       <h4>python</h4>
-                  </div>
-
-                  <div class="col-md-4">
-                       <h5>TechnoPark</h5>
-                  </div>
+				<div class="col-md-12">
+				  	<h4>
+				  		<span><a href="{% url 'questions_tag' tag="Nami" %}">Nami</a>&nbsp;&nbsp;&nbsp;</span>
+				  		<span><a href="{% url 'questions_tag' tag="Luffy" %}">Luffy</a>&nbsp;&nbsp;&nbsp;</span>
+				  		<span><a href="{% url 'questions_tag' tag="TrafalgarLaw" %}">TrafalgarLaw</a>&nbsp;&nbsp;&nbsp;</span>
+						<span><a href="{% url 'questions_tag' tag="Doflamingo" %}">Doflamingo</a>&nbsp;&nbsp;&nbsp;</span>
+				  		<span><a href="{% url 'questions_tag' tag="RoronoZoro" %}">RoronoZoro</a>&nbsp;&nbsp;&nbsp;</span>
+				 	 </h4>
+				</div>
              </div>
         </div>
 
-        <div class="askbuklin_other_information_3">
-             <div class="row">
-                  <div class="col-md-3">
-                       <h4>MySQL</h4>
-                  </div>
-
-                  <div class="col-md-4">
-                       <h4>django</h4>
-                  </div>
-              </div>      
-        </div>
-
-        <div class="askbuklin_other_information_4">
-             <div class="row">
-                 <div class="col-md-2">
-                       <h5>Mail.ru</h5>
-                 </div>
-
-                 <div class="col-md-3">
-                       <h5>Voloshin</h5>
-                 </div>
-
-                 <div class="col-md-3">
-                       <h6>FireFox</h6>
-                 </div>
-             </div>
-        </div>
-
-        <div class="askbuklin_other_information_5">
+        <div class="askbuklin_users">
              <div class="row">
                  <div class="col-md-12">
                         <h2>Best Members</h2>
                  </div>
              </div>
-        </div>
-
-         <div class="askbuklin_other_information_6">
+        
              <div class="row">
                   <div class="col-md-12">
-                        <h4><a href="Url">Monkey D. Luffy</a></h4>
+                        <h4><a href="{% url 'index' %}">Monkey D. Luffy</a></h4>
                   </div>
              </div>
-         </div>
 
-         <div class="askbuklin_other_information_7">
              <div class="row">
                   <div class="col-md-12">
-                        <h4><a href="Url">Rorono Zoro</a></h4>
+                        <h4><a href="{% url 'index' %}">Rorono Zoro</a></h4>
                   </div>
              </div>
-         </div>
 
-         <div class="askbuklin_other_information_8">
              <div class="row">
                   <div class="col-md-12">
-                        <h4><a href="Url">Nami</a></h4>
+                        <h4><a href="{% url 'index' %}">Nami</a></h4>
                   </div>
              </div>
-         </div>
 
-         <div class="askbuklin_other_information_9">
              <div class="row">
                   <div class="col-md-12">
-                        <h4><a href="Url">Usoup</a></h4>
+                        <h4><a href="{% url 'index' %}">Usoup</a></h4>
                   </div>
              </div>
-         </div>
 
-         <div class="askbuklin_other_information_10">
              <div class="row">
                   <div class="col-md-12">
-                        <h4><a href="Url">Trafalgar D. Water LO</a></h4>
+                        <h4><a href="{% url 'index' %}">Trafalgar D. Water Law</a></h4>
                   </div>
              </div>
          </div>           

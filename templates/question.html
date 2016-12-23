@@ -1,49 +1,40 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
-{% block not-authorized %}
-	{% include "not-authorized.html" %}
-{% endblock %}
-
 {% block main_head %}
-		    <div class="row">
-                        <div class="col-md-3">
-                            <h3>New Questions</h3>
-                        </div>
-                    </div>
+	<div class="row">
+        <div class="col-md-3">
+			<p>&nbsp;</p>
+        </div>
+   </div>
 {% endblock %}
 
 {% block content %}
-                                <div class="row" id="q_row_1">
-                                    <div class="col-md-2">
-                                        <h4>Title</h4>
-                                     </div>
-                                     <div class="col-md-10">
-                                         <input type="text" class="form-control" id="InputTitle1">
-                                     </div>                        
+
+{% include "post.html" %}
+
+{% for answer in answers %}
+  {% include "answer.html" %}
+{% endfor %}
+
+								<div class="askbuklin_your_answer">
+									<form action="" method="POST" class="post-form">
+										{% csrf_token %}
+		                                <div class="row">
+		                                     <div class="col-md-12">
+		                                         <p>{{form.content}}</p>
+		                                     </div>   
+		                                </div>
+		                                <div class="row">
+		                                     <div class="col-md-12">
+		                                        <h3>
+		                                            <button type="submit" class="btn btn-primary">Answer</button>
+		                                        </h3>
+		                                     </div>   
+		                                </div>
+									</form>
                                 </div>
 
-                                 <div class="row" id="q_row_2">
-                                    <div class="col-md-2">
-                                        <h4>Text</h4>
-                                     </div>
-                                     <div class="col-md-10">
-                                         <textarea class="form-control" rows="14"></textarea>
-                                     </div>                        
-                                </div>
+{% include 'paginator.html' with posts=answer %}
 
-                                 <div class="row" id="q_row_3">
-                                    <div class="col-md-2">
-                                        <h4>Tags</h4>
-                                     </div>
-                                     <div class="col-md-10">
-                                          <input type="text" class="form-control" id="InputTitle2">
-                                     </div>                        
-                                </div>
-
-                                 <div class="row" id="q_row_4">
-                                    <div class="col-md-12">
-                                        <button type="button" class="btn btn-success">Ask!</button>
-                                    </div>                        
-                                </div>
 {% endblock %}

@@ -9,10 +9,10 @@ from .modelmanager import ModelManager
 class Profile(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	nickname = models.CharField('Nickname', max_length=30)
-	avatar = models.ImageField('Avatar', upload_to='avatars/')
+	avatar = models.ImageField('Avatar', upload_to='uploads/')
 
 	def __str__(self):
-		return 'User {1}'.format(self.user.username)
+		return 'User {}'.format(self.user.username)
 
 	class Meta:
 		verbose_name = 'Profile'
@@ -35,8 +35,8 @@ class Question(models.Model):
 	tags = models.ManyToManyField('Tag')
     
 	created_date = models.DateTimeField('Creation date', auto_now=True)
-	like_count = models.IntegerField('Like count')
-	answer_count = models.IntegerField('Answer count')
+	like_count = models.IntegerField('Like count', default=0)
+	answer_count = models.IntegerField('Answer count', default=0)
 
 	objects = ModelManager()
 
@@ -54,7 +54,7 @@ class Answer(models.Model):
 	question = models.ForeignKey(Question)
     
 	created_date = models.DateTimeField('Creation date', auto_now=True)
-	like_count = models.IntegerField('Like count')
+	like_count = models.IntegerField('Like count', default=0)
 
 	def __str__(self):
 		return self.title
@@ -69,11 +69,11 @@ class Like_Question(models.Model):
 	is_like = models.BooleanField(default=True)	
 
 	def __str__(self):
-		return 'User {1} like {2} '.format(self.user.userprofile.nickname, self.question)
+		return 'User {} like {} '.format(self.user.profile.nickname, self.question)
 
 	class Meta:
 		unique_together = ("user", "question")
-		verbose_name = 'Like_qiestion'
+		verbose_name = 'Like_question'
 		verbose_name_plural = 'Likes_question'
 
 class Like_Answer(models.Model):
@@ -82,7 +82,7 @@ class Like_Answer(models.Model):
 	is_like = models.BooleanField(default=True)	
 
 	def __str__(self):
-		return 'User {1} like {2} '.format(self.user.userprofile.nickname, self.answer)
+		return 'User {} like {} '.format(self.user.profile.nickname, self.answer)
 
 	class Meta:
 		unique_together = ("user", "answer")

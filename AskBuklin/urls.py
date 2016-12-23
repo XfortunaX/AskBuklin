@@ -22,11 +22,13 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
 
     url(r'^hot/$', views.hot, name='hot'),
-	url(r'^ask/(?P<id_quest>[0-9]+)$', views.ask, name='ask'),
+	url(r'^question/(?P<id_quest>[0-9]+)$', views.question, name='question'),
     url(r'^tag/(?P<tag>[a-zA-Z0-9]+)$', views.questions_tag, name='questions_tag'),
     url(r'^settings/$', views.settings, name='settings'),
-    url(r'^question/$', views.question, name='question'),
-    url(r'^login/$', views.login, name='login'),
-    url(r'^signup/$', views.signup, name='signup'),
     url(r'^ask/$', views.ask, name='ask'),
+	url(r'^login/$', views.log_in, name='log_in'),
+	url(r'^logout/$', views.logout, name='logout'),
+    url(r'^signup/$', views.signup, name='signup'),
+    url(r'^like_q/$', views.like_q, name='like_q'),
+    url(r'^like_a/$', views.like_a, name='like_a'),
 ]

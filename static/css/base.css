@@ -3,6 +3,10 @@
     color: #F5F5F5;
 }
 
+#main a{
+    color: #F5F5F5;
+}
+
 /* base_start */
 .askbuklin_head .row .col-md-3 .row .col-md-12{
     color: #F5F5F5;
@@ -13,7 +17,7 @@
 }
 
 .askbuklin_main_head{
-    margin-top: 12px;
+    margin-top: 24px;
 	margin-bottom: 12px;
 }
 
@@ -66,15 +70,7 @@ img {
     color: green;
 }
 
-.askbuklin_other_information_4 .col-md-3 h6{
-    color: orange;
-}
-
 /* right_panel_end */
-
-a {
-    text-decoration: underline;
-}
 
 .askbuklin_page_navigation{
     padding-left: 400px;
@@ -84,9 +80,17 @@ a {
 
 /* index_start */
 
+.askbuklin_main_head .col-md-3 h4 {
+	padding-top: 16px;
+}
+
 .askbuklin_head .row .col-md-3 h1{
     margin-top: 17px;
     color: #F5F5F5;
+}
+
+.askbuklin_question .col-md-9 .col-md-12 {
+	padding-right: 40px;
 }
 
 .askbuklin_question_form .row{
@@ -139,5 +143,61 @@ span img{
 
 /* question_end */
 
+#like {
+	padding-left: 30px;
+}
 
+#dislike {
+	padding-left: 45px;
+}
 
+#image_author {
+	padding-left: 5px;
+	margin-bottom: 20px;
+}
+
+#like_count {
+	font-size: 25px;
+	padding-left: 102px;
+}
+
+#image_author img{
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+}
+
+#image_author_ans {
+	padding-left: 42px;
+	margin-bottom: 20px;
+}
+
+.askbuklin_answer .like-button {
+	height: 20px;
+	width: 22px;
+}
+
+.askbuklin_answer .col-md-9 .col-md-12 {
+	padding-left: 35px;
+}
+
+#like_count_ans {
+	font-size: 22px;
+	padding-left: 95px;
+}
+
+.settings .row {
+	margin-bottom: 10px;
+}
+
+.login .row {
+	margin-bottom: 10px;
+}
+
+.signup .row {
+	margin-bottom: 10px;
+}
+
+.ask .row {
+	margin-bottom: 14px;
+}

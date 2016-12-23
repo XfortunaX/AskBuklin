@@ -12,7 +12,7 @@ class Command(BaseCommand):
 			for i in range(random.randint(1, max_ans)):
 				quest = random.choice(self.questions)
 				answer = Answer(title='Monkey D Luffi',
-					content='Monkey D Luffi imba' * 3,
+					content='Monkey D Luffy imba!!! ' * 7,
 					author=random.choice(self.users),
 					like_count=0,
 					question=quest)
@@ -22,4 +22,4 @@ class Command(BaseCommand):
 				quest.save()
 
 	def handle(self, *args, **options):
-		self.createAnswer(max_ans=3)
+		self.createAnswer(max_ans=7)
